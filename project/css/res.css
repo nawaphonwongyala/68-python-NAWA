@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+
+/*BODY*/
+body{
+    font-family: Tahoma;
+    margin: 0;
+}
+
+/*HEADER*/
+.header{
+    padding: 60px;
+    text-align: center;
+    background: salmon;
+    color: white;
+}
+
+/*navigation bar*/
+.navbar{
+    display: flex;
+    background-color: #333;
+}
+
+/*navigation link*/
+.navbar a{
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/*HOVER*/
+.navbar a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+/*column container*/
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Create two unequal columns that sits next to each other*/
+/*sidebar/left column*/
+.side{
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/*main column*/
+.main{
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/*fake image*/
+.fakeimg{
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/*footer*/
+.footer{
+    padding: 20px;
+    text-align: center;
+    background-color: palegreen;
+}
+
+/*responsive*/
+@media(max-width:700px){
+    .row, .navbar{
+        flex-direction: column;
+    }
+}
+/*.flex-container{
+    display: flex;
+    flex-direction: row;
+    font-size: 50px;
+    text-align: center;
+}
+.flex-item-left{
+    background-color: purple;
+    padding: 10px;
+    flex: 50%;
+}
+.flex-item-right{
+    background-color: pink;
+    padding: 10px;
+    flex: 50%;
+}*/
