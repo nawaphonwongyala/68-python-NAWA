@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>ฟอร์มสมัครเรียนต่อระดับปริญญาตรี</h2>
+
+<form action="/action_page.php">
+
+<h3>ข้อมูลส่วนตัว</h3>
+<label>คำนำหน้าชื่อ:</label><br>
+    <input type="radio" name="prefix" value="นาย"> นาย
+    <input type="radio" name="prefix" value="นางสาว"> นางสาว
+    <input type="radio" name="prefix" value="นาง"> นาง<br><br>
+
+<label>ชื่อ:</label><br>
+    <input type="text" name="fname"><br><br>
+
+<label>นามสกุล:</label><br>
+    <input type="text" name="lname"><br><br>
+
+<label>เลขประจำตัวประชาชน (13 หลัก):</label><br>
+    <input type="text" name="idcart" maxlength="13"><br><br>
+
+<label>วันเดือนปีเกิด:</label><br>
+    <input type="date" name="birthday"><br><br>
+
+<label>อายุ (ปี):</label><br>
+    <input type="number" name="age"><br><br>
+
+<label>เพศ:</label><br>
+    <input type="radio" name="gender" value="ชาย"> ชาย
+    <input type="radio" name="gender" value="หญิง"> หญิง
+    <input type="radio" name="gender" value="ไม่ระบุ"> ไม่ระบุ<br><br>
+
+<label>สัญชาติ:</label><br>
+    <input type="text" name="nationality"><br><br>
+
+<label>เชื้อชาติ:</label><br>
+    <input type="text" name="ethnicity"><br><br>
+
+<label>ศาสนา:</label><br>
+    <input type="text" name="religion"><br><br>
+
+<label>เบอร์โทรศัพท์:</label><br>
+    <input type="tel" name="phone"><br><br>
+
+<label>อีเมล:</label><br>
+    <input type="email" name="email"><br><br>
+
+<label>ที่อยู่:</label><br>
+    <textarea name="address" rows="4" cols="50"></textarea><br><br>
+
+
+<h3>ข้อมูลการสมัคร</h3>
+<label>วุฒิที่จบมา:</label><br>
+    <input type="radio" name="degree" value="ม.6"> ม.6
+    <input type="radio" name="degree" value="ปวช."> ปวช.
+    <input type="radio" name="degree" value="ปวส."> ปวส.<br><br>
+
+<label>ชื่อสถานศึกษา:</label><br>
+    <input type="text" name="school"><br><br>
+
+<label>ปีที่จบ:</label><br>
+    <input type="number" name="gradyear"><br><br>
+
+<label>GPA:</label><br>
+    <input type="number" step="0.01" name="gpa"><br><br>
+
+<label>สาขาที่สมัคร:</label><br>
+    <input type="radio" name="major" value="IT"> IT
+    <input type="radio" name="major" value="ITI"> ITI
+    <input type="radio" name="major" value="INE"> INE
+    <input type="radio" name="major" value="INET"> INET<br><br>
+
+<label>เหตุผลที่เลือกสาขา:</label><br>
+    <textarea name="reason" rows="4" cols="50"></textarea><br><br>
+
+
+<h3>ประวัติการศึกษา</h3>
+<label>ประถมศึกษา - สถานศึกษา:</label><br>
+    <input type="text" name="elem_school"><br>
+<label>จังหวัด:</label><br>
+    <input type="text" name="elem_province"><br>
+<label>ปีที่เข้า:</label><br>
+    <input type="number" name="elem_in"><br>
+<label>ปีที่จบ:</label><br>
+    <input type="number" name="elem_out"><br>
+<label>วุฒิที่ได้รับ:</label><br>
+    <input type="text" name="elem_degree"><br>
+<label>GPA:</label><br>
+    <input type="number" step="0.01" name="elem_gpa"><br><br>
+
+<label>มัธยมต้น - สถานศึกษา:</label><br>
+    <input type="text" name="mid_school"><br>
+<label>จังหวัด:</label><br>
+    <input type="text" name="mid_province"><br>
+<label>ปีที่เข้า:</label><br>
+    <input type="number" name="mid_in"><br>
+<label>ปีที่จบ:</label><br>
+    <input type="number" name="mid_out"><br>
+<label>วุฒิที่ได้รับ:</label><br>
+    <input type="text" name="mid_degree"><br>
+<label>GPA:</label><br>
+    <input type="number" step="0.01" name="mid_gpa"><br><br>
+
+<label>มัธยมปลาย/ปวช./ปวส. - สถานศึกษา:</label><br>
+    <input type="text" name="high_school"><br>
+<label>จังหวัด:</label><br>
+    <input type="text" name="high_province"><br>
+<label>ปีที่เข้า:</label><br>
+    <input type="number" name="high_in"><br>
+<label>ปีที่จบ:</label><br>
+    <input type="number" name="high_out"><br>
+<label>วุฒิที่ได้รับ:</label><br>
+    <input type="text" name="high_degree"><br>
+<label>GPA:</label><br>
+    <input type="number" step="0.01" name="high_gpa"><br><br>
+
+
+<h3>เอกสารแนบ</h3>
+    <label>แนบไฟล์:</label><br>
+    <input type="file" name="files" multiple><br><br>
+
+
+<h3>ยืนยันข้อมูล</h3>
+    <input type="checkbox" name="confirm"> ยืนยันความถูกต้อง<br><br>
+
+    <input type="submit" value="ส่ง">
+    <input type="reset" value="ล้าง">
+
+</form>
+
+</body>
+</html>
+
