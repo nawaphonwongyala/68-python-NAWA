@@ -1,1 +1,1 @@
-sadwad
+print
